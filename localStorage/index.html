@@ -1,9 +1,40 @@
 <!DOCTYPE html>
-  <head>
 
-  </head>
-  <body>
-    <script src="localStorage.js"></script>
-    <script src="scripts.js"></script>
-  </body>
+<head>
+  <style>
+    table,
+    th,
+    td {
+      width: 50%;
+      border: 1px solid black;
+      margin-left: 320px;
+    }
+
+    .text-submit-massage {
+      background-color: antiquewhite;
+      border: 1px solid #f3cccc;
+      width: fit-content;
+      padding: 17px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <form id="form">
+      Name: <input type="text" name="name" id="full_name" required/> <br>
+      Email :<input  type="email" name="email" id="email" required/> <br>
+      Age :<input type="number" name="age" id="age" required/> <br>
+      <button onclick="addData()" id="submit">Submit </button>
+      <button onclick="removeItem()"> Remove Item</button>
+      <button onclick="removeAllItem()">Remove All Item</button>
+    </form>
+    <p id="text"></p> <br>
+    <div class="text-submit-massage" id="text-submit-massage">
+    </div>
+  </div>
+  <script src="localStorage.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
 </html>
